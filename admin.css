@@ -1,0 +1,15 @@
+#grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            padding: 1rem;
+            background-color: aliceblue;
+
+        }
+        .card {
+            text-align: center;
+            box-shadow: 5px 5px 10px brown;
+            background-color: plum;
+            border-radius: 10px;
+            padding: 10px;
+        }

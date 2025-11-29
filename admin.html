@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div id="sidebar">
+        <h3>Add Vehicle</h3>
+        <input id="regno" type="text" placeholder="enter valid reg no" required>
+        <select id="vehicles">
+            <option value="Auto">Auto</option>
+            <option value="Car">Car</option>
+            <option value="Truck">Truck</option>
+            <option value="Bus">Bus</option>
+
+        </select>
+        <input id="name" type="text" placeholder="enter driver name" required>
+        <select id="options">
+            <option value="Available">Available</option>
+            <option value="Unavailable">Unavailable</option>
+        </select>
+        <button onclick="fleet()" type="button">Add Fleet </button>
+
+
+    </div>
+    <div id="grid"></div>
+</body>
+<script src="admin.js">
+    
+</script>
+</html>
