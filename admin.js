@@ -65,3 +65,13 @@ const fleets = [];
         document.classList.toggle("Available");
     }
 
+function filter() {
+    const filteredValue = document.getElementById("category").value;
+    if(filteredValue === "All") {
+        renderFleets(fleets);
+    }
+    else{
+        const filtered = fleets.filter(fleet => fleet.vehicles === filteredValue);
+        renderFleets(fleets);
+    }
+}
