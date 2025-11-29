@@ -72,6 +72,6 @@ function filter() {
     }
     else{
         const filtered = fleets.filter(fleet => fleet.vehicles === filteredValue);
-        renderFleets(fleets);
+        renderFleets(filteredValue);
     }
 }
